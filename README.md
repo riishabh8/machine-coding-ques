@@ -20,7 +20,7 @@ Insipiration </br>
 
 ### Challenge 1:
 
-Implement Toast widget using HTML, CSS and JavaScript [View](./Toast/README.md)
+Implement Toast widget using HTML, CSS and JavaScript [View](./Toast/index.html)
 
 **Duration:** 30 Minutes <br/>
 **Difficulty:** Very Easy <br/>
