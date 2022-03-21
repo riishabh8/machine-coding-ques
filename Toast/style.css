@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.snackbar {
+  background-color: rgba(0, 0, 0, 0.89);
+  color: white;
+  width: fit-content;
+  padding: 2px 40px;
+  margin: 0 auto;
+  position: absolute;
+  font-size: large;
+  visibility: hidden;
+}
+
+.show {
+  bottom: 30px;
+  left: 650px;
+  visibility: visible;
+  animation: bottom-in 1s ease-in;
+}
+
+@keyframes bottom-in {
+  0% {
+    bottom: -50px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 30px;
+    opacity: 1;
+  }
+}

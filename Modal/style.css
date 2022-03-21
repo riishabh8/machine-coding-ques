@@ -1,0 +1,41 @@
+body {
+  background-color: aliceblue;
+  position: relative;
+}
+
+.modal-heading {
+  background-color: rgb(223, 223, 141);
+  border: 2px solid black;
+  height: fit-content;
+  width: 800px;
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  left: 330px;
+  visibility: hidden;
+}
+
+.modal-heading h1 {
+  text-align: center;
+  position: relative;
+}
+.modal-heading h1 button {
+  position: absolute;
+  right: 0;
+}
+
+.animation {
+  visibility: visible;
+  animation: fly-in 0.5s ease-in;
+}
+
+@keyframes fly-in {
+  0% {
+    top: -300px;
+    opacity: 0;
+  }
+  100% {
+    top: 20px;
+    opacity: 1;
+  }
+}

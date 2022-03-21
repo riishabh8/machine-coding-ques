@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: fit-content;
+  border: 15px solid black;
+  margin: 0 auto;
+  position: relative;
+  top: 35px;
+}
+.white,
+.black {
+  height: 83px;
+  width: 83px;
+  display: inline-block;
+}
+
+.black {
+  background-color: black;
+  border: 1px solid white;
+  margin: -5px;
+}
+.white {
+  background-color: white;
+  border: 1px solid black;
+  margin: -5px;
+}
+.red {
+  background-color: red;
+}

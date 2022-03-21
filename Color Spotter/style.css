@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.block {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  border: 2px solid black;
+  margin: 2px;
+  display: inline-block;
+}
+.game-area {
+  width: fit-content;
+  border: 2px solid black;
+  margin: 0 auto;
+  position: relative;
+  top: 35px;
+}
+.add-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.shake {
+  animation: shake 0.8s infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-8px);
+  }
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    transform: translateX(8px);
+  }
+}
