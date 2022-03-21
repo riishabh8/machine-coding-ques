@@ -25,7 +25,7 @@ Implement Toast widget using HTML, CSS and JavaScript [View](./Toast/index.html)
 **Duration:** 30 Minutes <br/>
 **Difficulty:** Very Easy <br/>
 
-**Solution:** [Solution 1]()
+**Solution:** [Solution ]()
 
 ---
 
@@ -36,6 +36,6 @@ Creating custom Modal widget using HTML, CSS and JavaScript [View](./Modal/READM
 **Duration:** 45 Minutes <br/>
 **Difficulty:** Easy <br/>
 
-**Solution:** [Solution 1]()
+**Solution:** [Solution ]()
 
 ---
