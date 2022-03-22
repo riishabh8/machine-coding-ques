@@ -1,4 +1,5 @@
-max = 19;
+row = 20;
+col = 48;
 let activeColor = "white";
 let mousePress = false;
 function createBoard() {
@@ -16,15 +17,8 @@ function createBoard() {
       event.target.style.backgroundColor = activeColor;
     }
   });
-  parent.addEventListener("click", (event) => {
-    if (mousePress) {
-      mousePress = false;
-    }
-    mousePress = true;
-  });
-
-  for (let i = 0; i < max; i++) {
-    for (let j = 0; j < max; j++) {
+  for (let i = 0; i < row; i++) {
+    for (let j = 0; j < col; j++) {
       const block = document.createElement("div");
       block.classList.add("block");
 
@@ -41,7 +35,7 @@ const getRandomColor = () => {
 
 const addColorPallete = () => {
   const parent = document.querySelector("#color-area");
-  for (let j = 0; j < max; j++) {
+  for (let j = 0; j < 48; j++) {
     const block = document.createElement("div");
     block.classList.add("block");
     block.style.backgroundColor = getRandomColor();
