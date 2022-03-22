@@ -4,6 +4,8 @@ let pcChoiceCol = -1;
 let usrChoiceRow = -1;
 let usrChoiceCol = -1;
 let max = 1;
+let maxht = 100;
+let maxwi = 100;
 const parent = document.querySelector(".game-area");
 const currScore = document.querySelector("#score");
 
@@ -49,23 +51,35 @@ function setOddIndex() {
 const createBoard = () => {
   parent.innerHTML = "";
   if (max >= 10) {
-    parent.classList.add("add-flex");
+    maxht -= 5;
+  }
+  else if(maxht == 10){
+    maxht = 30;
+  } 
+  else {
+    maxht -= 2;
+    maxwi -= 2;
   }
   const { color, oddColor } = getRandomColors();
   setOddIndex();
   for (let i = 0; i < max; i++) {
+    const row = document.createElement("div");
+    row.classList.add("row");
     for (let j = 0; j < max; j++) {
       let block = document.createElement("div");
       block.classList.add("block");
       block.style.backgroundColor = color;
+      block.style.height = `${maxht}px`;
+      block.style.width = `${maxwi}px`;
       block.dataset.row = i;
       block.dataset.col = j;
       if (i == pcChoiceRow && j == pcChoiceCol) {
         block.style.backgroundColor = oddColor;
       }
-      parent.appendChild(block);
+      row.appendChild(block);
     }
-    parent.innerHTML += "<br>";
+    parent.appendChild(row);
+    // parent.innerHTML += "<br>";
   }
 };
 
@@ -91,6 +105,7 @@ function checkClick() {
     score = 0;
     displayScore();
     max = 1;
+    maxht = maxwi = 100;
     createBoard();
   }
 }

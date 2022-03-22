@@ -8,7 +8,6 @@ body {
   width: 100px;
   background-color: aqua;
   border: 2px solid black;
-  margin: 2px;
   display: inline-block;
 }
 .game-area {
@@ -17,10 +16,11 @@ body {
   margin: 0 auto;
   position: relative;
   top: 35px;
+  max-width: 950px;
 }
-.add-flex {
+.row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: flex-start;
 }
 .shake {
