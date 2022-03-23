@@ -16,9 +16,10 @@ body {
 }
 
 .block {
-  height: 30px;
-  width: 30px;
+  height: 31px;
+  width: 29.5px;
   border: 1px solid black;
   display: inline-block;
-  margin-top: -4.4px;
+  margin-top: -3px;
+  margin-bottom: -2px;
 }
